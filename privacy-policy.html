@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | NooBot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #1e3a8a, #9333ea, #000);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+
+    header nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    header nav ul li {
+      display: inline-block;
+    }
+
+    header nav ul li a {
+      color: #facc15;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+
+    header nav ul li a:hover {
+      color: #ff0066;
+    }
+
+    .hero {
+      padding: 70px 20px;
+      background: url('https://source.unsplash.com/1600x900/?technology,privacy') no-repeat center center;
+      background-size: cover;
+      box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      animation: neonPulse 1.5s infinite alternate;
+    }
+
+    @keyframes neonPulse {
+      from { text-shadow: 0 0 10px #9333ea, 0 0 20px #ff0066; }
+      to { text-shadow: 0 0 20px #ffcc00, 0 0 30px #facc15; }
+    }
+
+    .container {
+      padding: 120px 20px 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+      flex-grow: 1;
+    }
+
+    h1, h3 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #f5f5f5;
+      line-height: 1.8;
+    }
+
+    .terms-section {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      margin: 20px 0;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.9);
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+      transition: color 0.3s ease-in-out;
+      animation: linkGlow 1.5s infinite alternate;
+    }
+
+    @keyframes linkGlow {
+      from { text-shadow: 0 0 5px #ff0066; }
+      to { text-shadow: 0 0 15px #facc15; }
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    .info-box {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.9);
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      z-index: 2000;
+      text-align: center;
+    }
+
+    .info-box h3 {
+      margin-bottom: 10px;
+    }
+
+    .info-box button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #ff0066;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .info-box button:hover {
+      background: #facc15;
+    }
+  </style>
+  <script>
+    function showInfo() {
+      document.querySelector('.info-box').style.display = 'block';
+    }
+
+    function closeInfo() {
+      document.querySelector('.info-box').style.display = 'none';
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bot.html">My Bot</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Privacy Policy</h1>
+    <h3>Last Updated: January 24, 2025</h3>
+  </section>
+
+  <div class="container">
+    <div class="terms-section">
+      <h3>1. Introduction</h3>
+      <p>Welcome to NooBot! We value your privacy and want to make sure that you understand how we collect, use, and protect your data.</p>
+
+      <h3>2. Information We Collect</h3>
+      <p>We collect information when you use our bot, including but not limited to your username, server details, and usage data.</p>
+
+      <h3>3. How We Use Your Information</h3>
+      <p>Your information is used solely to improve your experience with NooBot. We do not sell or share your information with third parties.</p>
+
+      <h3>4. Data Security</h3>
+      <p>We employ industry-standard security measures to protect your data from unauthorized access and misuse.</p>
+
+      <h3>5. Contact Us</h3>
+      <p>If you have any questions about our privacy practices, please feel free to contact us at: ILikeTacosToo@proton.me</p>
+    </div>
+
+    <div class="rotating-cube" onclick="showInfo()">
+      <div class="front"></div>
+      <div class="back"></div>
+      <div class="right"></div>
+      <div class="left"></div>
+      <div class="top"></div>
+      <div class="bottom"></div>
+    </div>
+
+    <div class="info-box">
+      <h3>About NooBot</h3>
+      <p>NooBot helps you with advanced moderation, fun commands, and music streaming for your Discord server. Use <code>/help</code> to see all features!</p>
+      <button onclick="closeInfo()">Close</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 NooBot | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a></p>
+  </footer>
+</body>
+</html>
