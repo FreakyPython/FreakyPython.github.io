@@ -1,76 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="styles.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | My Discord Bot</title>
-  <script>
-    function showInfo() {
-      const infoBox = document.querySelector('.info-box');
-      if (infoBox) {
-        infoBox.style.display = 'block'; // Show the info box
-      } else {
-        console.error('Info box not found!');
-      }
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NooBot - A multipurpose Discord bot with economy, utility, and fun commands">
+    <title>NooBot - Your Ultimate Discord Bot</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Include Three.js for 3D Star Background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="stars.js" defer></script>
 
-    function closeInfo() {
-      const infoBox = document.querySelector('.info-box');
-      if (infoBox) {
-        infoBox.style.display = 'none'; // Hide the info box
-      } else {
-        console.error('Info box not found!');
-      }
-    }
-  </script>
+    <script>
+        function showInfo() {
+            document.querySelector('.info-box').style.display = 'block';
+        }
+
+        function closeInfo() {
+            document.querySelector('.info-box').style.display = 'none';
+        }
+    </script>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="bot.html">My Bot</a></li>
-        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-        <li><a href="terms.html">Terms & Conditions</a></li>
-        <li><a href="https://discord.com/oauth2/authorize?client_id=1331103310874148997&permissions=8&scope=bot" target="_blank">Invite Bot</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h1>Welcome to My Discord Bot</h1>
-    <p>Crafting Smart Bots to Enhance Your Discord Experience</p>
-    <div class="rotating-cube" onclick="showInfo()">
-      <div class="front">Front</div>
-      <div class="back">Back</div>
-      <div class="right">Right</div>
-      <div class="left">Left</div>
-      <div class="top">Top</div>
-      <div class="bottom">Bottom</div>
+    <!-- 3D Star Background -->
+    <div class="background">
+        <canvas id="stars"></canvas>
     </div>
-    <a href="bot.html" class="cta-button">Explore My Bot</a>
-  </section>
 
-  <!-- Info Box -->
-  <div class="info-box">
-    <h3>About the Bot</h3>
-    <p>This bot offers the following features:</p>
-    <ul style="text-align: left;">
-      <li>🎮 Gaming: Matchmaking and event management</li>
-      <li>📊 Economy: Virtual coin balance and daily rewards</li>
-      <li>🎶 Music: Stream your favorite songs with <code>!play [URL]</code></li>
-      <li>🛠️ Moderation: Effortlessly manage channels and users</li>
-      <li>🤖 Fun Commands: Jokes, memes, and mock text</li>
-      <li>🌦️ Weather: Get live weather updates with <code>/weather</code></li>
-      <li>📰 News: Stay updated with the latest headlines</li>
-    </ul>
-    <p>To get started, invite the bot using the "Invite Bot" button above and type <code>/help</code> in your server!</p>
-    <button onclick="closeInfo()">Close</button>
-  </div>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bot.html">My Bot</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <footer>
-    <p>&copy; 2025 My Discord Bot | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a></p>
-  </footer>
+    <section class="hero">
+        <h1>NooBot - Your Ultimate Discord Bot</h1>
+        <p>Powerful moderation, economy system, fun commands, and much more!</p>
+    </section>
+
+    <div class="container">
+        <!-- Features Section -->
+        <div class="features">
+            <h2>Bot Features</h2>
+            <ul>
+                <li><strong>🌍 Moderation</strong> - Kick, ban, mute, and manage your server.</li>
+                <li><strong>💰 Economy</strong> - Earn money, buy items, and compete in leaderboards.</li>
+                <li><strong>🎲 Fun</strong> - Play games, get jokes, and enjoy entertainment commands.</li>
+                
+                <li><strong>📊 Server Stats</strong> - Get real-time statistics of your Discord server.</li>
+            </ul>
+        </div>
+
+        <!-- Centered Invite Button -->
+        <div class="button-container">
+            <a href="https://discord.com/oauth2/authorize?client_id=1331103310874148997&permissions=8&scope=bot" class="button">Invite NooBot</a>
+        </div>
+
+        <!-- Commands Section -->
+        <h2>Available Commands</h2>
+        <div class="commands" id="commands-list">
+            <p>Loading commands...</p>
+        </div>
+
+        <!-- Rotating Cube for Extra Effect -->
+        <div class="cube-container">
+            <div class="cube">
+                <div class="face front">🤖</div>
+                <div class="face back">⚙️</div>
+                <div class="face right">🎮</div>
+                <div class="face left">💰</div>
+                <div class="face top">🌍</div>
+                <div class="face bottom">🔊</div>
+            </div>
+        </div>
+
+        <!-- Info Box -->
+        <div class="info-box">
+            <h3>About NooBot</h3>
+            <p>NooBot helps you with moderation, economy, and fun commands to keep your Discord server active and entertaining. Use <code>/help</code> to explore all commands!</p>
+            
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 NooBot | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a></p>
+    </footer>
+
+    <!-- Load Commands from JSON -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const commandsContainer = document.getElementById("commands-list");
+            if (commandsContainer) {
+                fetch("./commands.json")
+                    .then(response => response.json())
+                    .then(data => {
+                        commandsContainer.innerHTML = "";
+                        data.commands.forEach(cmd => {
+                            const cmdElement = document.createElement("p");
+                            cmdElement.innerHTML = `<strong>${cmd.name}</strong> - ${cmd.description}`;
+                            commandsContainer.appendChild(cmdElement);
+                        });
+                    })
+                    .catch(error => console.error("Error loading commands:", error));
+            }
+        });
+    </script>
+
 </body>
 </html>

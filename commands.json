@@ -1,0 +1,108 @@
+{
+    "commands": [
+        {
+            "name": "/ping",
+            "description": "Responds with Pong and shows latency!"
+        },
+        {
+            "name": "/hello",
+            "description": "Sends a friendly greeting."
+        },
+        {
+            "name": "/joke",
+            "description": "Get a random joke for some laughs."
+        },
+        {
+            "name": "/poll",
+            "description": "Create a poll for voting. Usage: /poll <question> <option1> <option2> ..."
+        },
+        {
+            "name": "/mock",
+            "description": "Mock a given text in SpOnGEbOb style."
+        },
+        {
+            "name": "/trivia",
+            "description": "Play a trivia game! Answer questions to test your knowledge."
+        },
+        {
+            "name": "/bothelp",
+            "description": "Displays a detailed help message for using the bot and its commands."
+        },
+        {
+            "name": "/server_stats",
+            "description": "View real-time statistics for the server."
+        },
+        {
+            "name": "/balance",
+            "description": "Check your current balance in the economy system."
+        },
+        {
+            "name": "/daily",
+            "description": "Claim your daily reward to earn coins."
+        },
+        {
+            "name": "/work",
+            "description": "Earn coins by working. Usage: /work to see available jobs."
+        },
+        {
+            "name": "/give",
+            "description": "Give coins to another user. Usage: /give <user> <amount>"
+        },
+        {
+            "name": "/leaderboard",
+            "description": "View the top 10 richest users in the economy."
+        },
+        {
+            "name": "/rules",
+            "description": "Displays the server rules to keep order."
+        },
+        {
+            "name": "/news",
+            "description": "Get the latest news based on country and category."
+        },
+        {
+            "name": "/birthday set",
+            "description": "Set your birthday for special announcements. Usage: /birthday set <MM/DD>"
+        },
+        {
+            "name": "/birthday check",
+            "description": "Check your registered birthday."
+        },
+        {
+            "name": "/birthday list",
+            "description": "View upcoming birthdays in the server."
+        },
+        {
+            "name": "/birthday channel",
+            "description": "Set the birthday announcement channel (Admin only)."
+        },
+        {
+            "name": "/weather",
+            "description": "Get the weather for a city or your default city. Usage: /weather <city>"
+        },
+        {
+            "name": "/setdefault",
+            "description": "Set your default city for the weather command."
+        },
+        {
+            "name": "/clear",
+            "description": "Clears a specified number of messages from the chat. Usage: /clear <number>"
+        },
+        {
+            "name": "/meme",
+            "description": "Fetch a random meme to enjoy!"
+        },
+        {
+            "name": "/stock",
+            "description": "Get the current price of a stock. Usage: /stock <ticker>"
+        },
+        {
+            "name": "/crypto",
+            "description": "Get the current price of a cryptocurrency. Usage: /crypto <symbol>"
+        },
+        {
+            "name": "/setup_server",
+            "description": "Sets up server roles, categories, and channels (Owner-only and one-time use)."
+        }
+    ]
+}
